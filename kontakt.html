@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylik.css">
+    <style>
+        #doflexa{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }   
+        @media screen and (max-width: 1300px) {
+            #doflexa{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image/glowny.jpg" alt="Zdjecie_Miejscowosci">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" target="">Główna</a></li>
+            <li></li>
+            <li><a href="miejscowosc.html" target="">Miejscowosc</a></li>
+            <li><a href="kontakt.html" target="">Kontakt</a></li>
+        </ul>
+    </nav>
+    <div id="doflexa">
+        <div>
+            Dane kontaktowe:<br>
+            Email: cosikmail@gmail.com<br>
+            telefon: 123456789
+        </div>
+    <form action="kontakt.html" method="post">
+        <label for="topic">Temat</label><br>
+        <input type="text" name="topic" id="topic">
+        <br>
+        <label for="text">Treść</label>
+        <br>
+        <textarea name="text" id="text" cols="30" rows="10"></textarea>
+        <br>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <input type="submit" value="Wyślij" id="przycisk">
+    </form></div>
+</body>
+</html>
